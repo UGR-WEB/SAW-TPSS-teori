@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Seçenekli Quiz</title>
+    
+    <!-- Harici CSS Dosyaları -->
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&subset=latin-ext" rel="stylesheet">
+    
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #fae8d2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #question {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #f85f73;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            color: #fae8d2;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .skor {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .answer {
+            display: block;
+            padding: 12px;
+            margin: 10px auto;
+            width: 85%;
+            background: #283b63;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            color: #fae8d2;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .answer:hover {
+            background: #3a4d7a;
+        }
+
+        .answer:active, 
+        .answer.selected {
+            background: orange;
+            color: white;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="question">
+            <p id="question_text">Soru yükleniyor...</p>
+        </div>
+
+        <div>
+            <span class="skor">Doğru: <span id="correctAnswers">0</span></span>
+            <span class="skor">Yanlış: <span id="wrongAnswers">0</span></span>
+        </div>
+
+        <!-- Butonlar -->
+        <button class="answer" id="button_0">Seçenek 1</button>
+        <button class="answer" id="button_1">Seçenek 2</button>
+        <button class="answer" id="button_2">Seçenek 3</button>
+        <button class="answer" id="button_3">Seçenek 4</button>
+        <button class="answer" id="button_4">Seçenek 5</button>
+    </div>
+
+    <!-- Harici JS Dosyaları -->
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/quiz.js"></script>
+
+    <script>
+        // Butonlara tıklama olaylarını ekleyelim
+        document.querySelectorAll('.answer').forEach((button, index) => {
+            button.addEventListener('click', () => CheckAndCreateNewQuestion(index));
+        });
+    </script>
+</body>
+
+</html>

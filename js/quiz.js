@@ -2592,17 +2592,6 @@ var questions = [
   "cevap": 2
 },
 {
-  "soru": "Yukarıdakilerden hangileri havaya dönük bölümün güvenliği için alınacak tedbirler arasında yer alır?",
-  "secenekler": [
-    "1 ve 4",
-    "1, 2 ve 3",
-    "2 ve 3",
-    "1, 2, 3 ve 4",
-    "1, 3 ve 4"
-  ],
-  "cevap": 3
-},
-{
   "soru": "Aşağıdakiler hangisi aktif sabotajlardan değildir?",
   "secenekler": [
     "Fikir Sabotajı",
@@ -3500,20 +3489,19 @@ function CreateQuestion() {
     usedQuestions.push(randomIndex);
     currentQuestion = questions[randomIndex];
 
-    // Şıkları rastgele karıştır
-    var shuffledOptions = ShuffleArray([...currentQuestion.secenekler]);
-    answerIndex = shuffledOptions.indexOf(currentQuestion.secenekler[currentQuestion.cevap]);
+    // Doğrudan şıkları kullan
+    answerIndex = currentQuestion.cevap;
 
     // Soruyu ve seçenekleri güncelle
     UpdateHTML("question_text", currentQuestion.soru);
-    for (var i = 0; i < shuffledOptions.length; i++) {
-        UpdateHTML("button_" + i, shuffledOptions[i]);
+    for (var i = 0; i < currentQuestion.secenekler.length; i++) {
+        UpdateHTML("button_" + i, currentQuestion.secenekler[i]);
     }
 }
 
-// Cevabı kontrol et ve yeni soru oluştur
 function CheckAndCreateNewQuestion(answer) {
-    if (answer == answerIndex) {
+    // answer ve currentQuestion.cevap'ı doğru türde karşılaştırmak için parseInt kullanabiliriz.
+    if (parseInt(answer) === parseInt(currentQuestion.cevap)) { 
         correctAnswers++;
         swal({
             title: "Doğru cevap!",
@@ -3547,15 +3535,6 @@ function CheckAndCreateNewQuestion(answer) {
 // Rastgele indeks oluşturur
 function GetRandomIndex(end) {
     return Math.floor(Math.random() * end);
-}
-
-// Şıkları rastgele karıştırma fonksiyonu
-function ShuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
 }
 
 // HTML güncelleme fonksiyonu

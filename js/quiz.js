@@ -2559,21 +2559,6 @@ var questions = [
   "cevap": 3
 },
 {
-  "soru": "Bomba ve şüpheli paket tespitinde hareket tarzında aşağıdakilerden hangisi yapılmaz? 
-      I)	Üzerine su veya başka bir madde atılmaz, örtülmez.
-II)	Şüpheli paketi güvenli bir bölgeye çekmek.
-III)	Çevrede başka bir paket olabileceği unutulmaz. 
-IV)	Çevresinde haberleşme cihazları kullanılmaz.",
-  "secenekler": [
-    "I ve II",
-    "II ve III",
-    "I, II ve IV",
-    "I ve IV",
-    "I, II ve III"
-  ],
-  "cevap": 1
-},
-{
   "soru": "Hasar gördüğünde hava meydanı fonksiyonlarının ciddi şekilde aksamasına yol açacak olan ve hava meydanı içinde veya hava meydanıyla direkt bağlantılı bulunan tesis ve yerlere ne ad verilir?",
   "secenekler": [
     "Havaalanı Dışı İşlem Tesisleri",
@@ -3177,17 +3162,6 @@ IV)	Çevresinde haberleşme cihazları kullanılmaz.",
     "Beyaz alarm seviyesi"
   ],
   "cevap": 0
-},
-{
-  "soru": "Bomba ve şüpheli paket tespitinde hareket tarzında yukarıdakilerden hangisi yapılmaz?",
-  "secenekler": [
-    "I, II ve III",
-    "II ve III",
-    "I, II ve IV",
-    "I ve IV",
-    "E ve II"
-  ],
-  "cevap": 2
 },
     {
   "soru": "Hasar gördüğünde hava meydanı fonksiyonlarının ciddi şekilde aksamasına yol açacak olan ve hava meydanı içinde veya hava meydanıyla direkt bağlantılı bulunan tesis ve yerlere ne ad verilir?",

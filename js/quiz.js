@@ -42,7 +42,7 @@ var questions = [
       "Etmd",
       "X-ray cihazından geçirilmeden, şarj çadırı içerisinde elle kontrolü yapılır."
     ],
-    "cevap": 0
+    "cevap": 4
   },
 
  {
@@ -79,7 +79,7 @@ var questions = [
     "cevap": 3
   },
   {
-    "soru": "Ray Bagaj Kontrol Cihazındaki kontrol panelinin Inorganik Stripping Tuşunun fonksiyonu nedir?",
+    "soru": "X-Ray Bagaj Kontrol Cihazındaki kontrol panelinin Inorganik Stripping Tuşunun fonksiyonu nedir?",
     "secenekler": [
       "Ekranda sadece organik maddeler görüntülenir.",
       "Ekranda sadece inorganik maddeler görüntülenir.",
@@ -87,7 +87,7 @@ var questions = [
       "Ekranda mix maddeler görüntülenir.",
       "Hiçbiri"
     ],
-    "cevap": 1
+    "cevap": 0
   },
 {
     "soru": "El tipi metal arama dedektörünün görevi nedir?",
@@ -187,7 +187,7 @@ var questions = [
       "Ek 13 Davranış Tespiti İle İlgili Temel Prensipler",
       "Ek 14 Havaalanı Yapısal Güvenlik Unsurları"
     ],
-    "cevap": 0
+    "cevap": 2
   },
   {
     "soru": "Aşağıdakilerden Milli Sivil Havacılık Güvenlik Programı Eklerinden hangisi yanlıştır?",
@@ -198,7 +198,7 @@ var questions = [
       "Ek 17 Havalimanları Güvenlik Risk Tehdit Değerlendirme ve Alarm Planı",
       "Ek 11 Hareket Yeteneği Kısıtlı Şahıslara Uygulanacak Kontrol Prensipleri"
     ],
-    "cevap": 4
+    "cevap": 3
   },
 {
     "soru": "Aşağıdakilerden Milli Sivil Havacılık Güvenlik Programı Eklerinden hangisi yanlıştır?",
@@ -718,7 +718,7 @@ var questions = [
     "Turuncu / Mavi / Yeşil",
     "Mavi / Turuncu / Yeşil"
   ],
-  "cevap": 0
+  "cevap": 3
 },
 {
   "soru": "Sivil Havacılık Sertifika Sınavı kaç yılda bir yapılır?",
@@ -1381,17 +1381,6 @@ var questions = [
   "cevap": 0
 },
 {
-  "soru": "Hangisi 2690 sayılı yasaya göre yayınlanmış olan X-ışınlı paket kontrol cihazları kullanım talimatlarında yer alan hususlar değildir?",
-  "secenekler": [
-    "Şüpheli durumlarda gerekli önlemler alınmalı",
-    "177 TAEK acil durum hattı aranmalıdır",
-    "Cihaz bakım talimatlarına uyulmalıdır",
-    "Cihazın doğru şekilde kullanımı sağlanmalıdır",
-    "Personel güvenliği ön planda tutulmalıdır"
-  ],
-  "cevap": 1
-},
-{
   "soru": "Penetrasyon neyi ifade eder?",
   "secenekler": [
     "X-ışınlarının numune üzerinde bıraktığı iz",
@@ -1422,7 +1411,7 @@ var questions = [
     "Yalnızca kablo tehdit oluşturur",
     "Yalnızca fünyeler tehdit oluşturur"
   ],
-  "cevap": 0
+  "cevap": 1
 },
 {
   "soru": "X-ray cihazlarının renkli monitöründe metaller ne renk görünür?",
@@ -1893,7 +1882,7 @@ var questions = [
 {
   "soru": "HANGİSİ POTANSİYEL TEHLİKE ARZ EDEN YOLCU DEĞİLDİR?",
   "secenekler": [
-    "Sürekli seyahat eden yolcu",
+    "Kural Dışı Yolcu",
     "Sürekli seyahat eden yolcu",
     "Eski suçlu yolcu",
     "İntihar riski olan yolcu",
@@ -2570,7 +2559,11 @@ var questions = [
   "cevap": 3
 },
 {
-  "soru": "Bomba ve şüpheli paket tespitinde hareket tarzında yukarıdakilerden hangisi yapılmaz?",
+  "soru": "Bomba ve şüpheli paket tespitinde hareket tarzında aşağıdakilerden hangisi yapılmaz? 
+      I)	Üzerine su veya başka bir madde atılmaz, örtülmez.
+II)	Şüpheli paketi güvenli bir bölgeye çekmek.
+III)	Çevrede başka bir paket olabileceği unutulmaz. 
+IV)	Çevresinde haberleşme cihazları kullanılmaz.",
   "secenekler": [
     "I ve II",
     "II ve III",
@@ -2578,7 +2571,7 @@ var questions = [
     "I ve IV",
     "I, II ve III"
   ],
-  "cevap": 0
+  "cevap": 1
 },
 {
   "soru": "Hasar gördüğünde hava meydanı fonksiyonlarının ciddi şekilde aksamasına yol açacak olan ve hava meydanı içinde veya hava meydanıyla direkt bağlantılı bulunan tesis ve yerlere ne ad verilir?",
@@ -3230,17 +3223,6 @@ var questions = [
   "cevap": 1
 },
 {
-  "soru": "Yukarıdakilerden hangileri havaya dönük bölümün güvenliği için alınacak tedbirler arasında yer alır?",
-  "secenekler": [
-    "1,3 ve 4",
-    "1, 2 ve 3",
-    "2 ve 3",
-    "1 ve 4",
-    "1, 2, 3 ve 4"
-  ],
-  "cevap": 4
-},
-{
   "soru": "Aşağıdakilerden hangisi aktif sabotajlardan değildir?",
   "secenekler": [
     "Biyolojik sabotaj",
@@ -3274,17 +3256,6 @@ var questions = [
   "cevap": 3
 },
 {
-  "soru": "Yasaklı maddelerin havayolu ile taşınmasına ilişkin yukarıdakilerden hangisi/hangileri yanlıştır?",
-  "secenekler": [
-    "I ve II",
-    "Yalnız I",
-    "Yalnız IV",
-    "I, II ve IV",
-    "Yalnız III"
-  ],
-  "cevap": 4
-},
-{
   "soru": "Yolcu mülakatı sırasında aşağıdakilerden hangisi yapılmamalıdır?",
   "secenekler": [
     "Sorgulayıcı tutum sergilemek",
@@ -3307,7 +3278,7 @@ var questions = [
   "cevap": 0
 },
 {
-  "soru": "Aşağıdakilerden hangisi bu görevlerden biri değildir?",
+  "soru": "Güvenlik hizmetlerinin uygulanmasından doğrudan görevli ve sorumlu olan kolluk ve özel güvenlik görevlileri (güvenlik personeli) mevzuat kapsamında kendilerine verilen görevleri yerine getirir.Aşağıdakilerden hangisi bu görevlerden biri değildir?",
   "secenekler": [
     "Güvenlik tahditli alanlara giriş için havaalanı giriş kartları ve araç plakalarının kontrolü",
     "Yolcuların aranması ve kontrolü",
@@ -3349,17 +3320,6 @@ var questions = [
     "Monitör/ekran"
   ],
   "cevap": 3
-},
-{
-  "soru": "Yukarıdakilerden hangisi/hangileri havaalanı çevre güvenliği yapısal unsurlardandır?\nI) Yaya ve Motorize Devriye Yolları\nII) Aydınlatma\nIII) Görüşü Engeleyen Unsurlar\nIV) Kapalı devre kamera sistemi",
-  "secenekler": [
-    "Yalnız I",
-    "I, II, III ve IV",
-    "I ve II",
-    "I, II ve III",
-    "II, III ve IV"
-  ],
-  "cevap": 1
 },
 {
   "soru": "Aşağıdakilerden hangisi havaalanı giriş kartı üzerinde yer alan bilgilerden birisi değildir?",
@@ -3406,17 +3366,6 @@ var questions = [
   "cevap": 4
 },
 {
-  "soru": "Yukarıdakilerden hangisi/hangileri 'Sivri /Keskin/Delici Eşyalar/Nesneler'dendir?\nI) Dart\nII) Zıpkın\nIII) Dağcılık malzemeleri (krampon, çekiç, balta, tırmanma sopaları)\nIV) Kayak ve batonlar",
-  "secenekler": [
-    "I, II ve III",
-    "Yalnız I",
-    "I ve II",
-    "I, II, III ve IV",
-    "II, III ve IV"
-  ],
-  "cevap": 3
-},
-{
   "soru": "Aşağıdakilerden hangisi beden dilinin öğelerinden değildir?",
   "secenekler": [
     "Gözler",
@@ -3428,7 +3377,7 @@ var questions = [
   "cevap": 2
 },
 {
-  "soru": "Araç park alanları hakkında yukarıdakilerden hangisi/hangileri doğrudur?\n1. Personel ve yolcu araçları için ayrı park yerleri düzenlenmelidir.\n2. Otobüsler, servis araçları ve taksiler için ayrı park yerleri düzenlenmelidir.\n3. Terminal binasının ön kısmında bomba yerleştirilmiş araçların doğuracağı tehlikeyi asgariye indirmek için 50 m mesafeye araç yaklaşması ve park etmelerine mani olacak fiziki düzenlemeler yapılmalıdır.\n4. Terminalin ön kısmına, sadece yolcu indirecek süreyle araç girişine müsaade edilmelidir.",
+  "soru": "Araç park alanları hakkında aşağıdakilerden hangisi/hangileri doğrudur?\n1. Personel ve yolcu araçları için ayrı park yerleri düzenlenmelidir.\n2. Otobüsler, servis araçları ve taksiler için ayrı park yerleri düzenlenmelidir.\n3. Terminal binasının ön kısmında bomba yerleştirilmiş araçların doğuracağı tehlikeyi asgariye indirmek için 50 m mesafeye araç yaklaşması ve park etmelerine mani olacak fiziki düzenlemeler yapılmalıdır.\n4. Terminalin ön kısmına, sadece yolcu indirecek süreyle araç girişine müsaade edilmelidir.",
   "secenekler": [
     "I",
     "II ve III",

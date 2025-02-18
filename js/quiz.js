@@ -223,7 +223,7 @@ var questions = [
     "cevap": 4
   },
 {
-    "soru": "Parmak izi, göz retinası, iris, yüz şekli, ses, imza, avuç içi gibi insana özgü karakteristikleri saptayarak bu verileri bilgisayar sistemleri, veri bankaları gibi ortamlarda karşılaştırarak giriş için kimlik doğrulamasını yapan; kişinin sadece kendisinin sahip olduğu, değiştiremediği ve diğerlerinden ayırt edici olan fiziksel veya davranışsal bir özelliğinin tanınması ile çalışan sistemlere…………. denir.",
+    "soru": "Parmak izi, göz retinası, iris, yüz şekli, ses, imza, avuç içi gibi insana özgü karakteristikleri saptayarak bu verileri işleyen sistemlere…………. denir.",
     "secenekler": [
       "Ktmd",
       "Etmd",
@@ -266,30 +266,7 @@ var questions = [
     ],
     "cevap": 4
   },
-  {
-    "soru": "Aşağıdaki terimlerden hangisi yanlıştır?",
-    "secenekler": [
-      "Kapalı Devre TV Sistemi (CCTV): Sivil havacılık güvenliğini sağlamak amacı ile kameralar vasıtasıyla kesintisiz kayıt esasına dayalı olarak izlenmesini sağlayan sistemi",
-      "Kapı Tipi Metal Dedektörü (KTMD): Güvenlik kontrol noktalarında veya gerekli görülen diğer yerlerde yolcu ve yolcu dışındaki kişilerin geçişlerinde güvenlik taramasının yapılabilmesi amacıyla, sadece metale duyarlı olan dedektörü",
-      "Hava Tarafı: Bir havaalanında doğrudan uçuş faaliyetlerine dahil olmayan terminal binalarını, diğer tüm yapıları, kullanımlı veya boş sahaları içine alan, ana giriş yolu/yolları kontrol noktasından başlayarak havaalanı bölümünü",
-      "Kargo: Bagaj, posta, havayolu işletmesi postası, havayolu işletmesi malzemeleri ve uçak içi tedarikler haricinde hava aracında taşınan her türlü eşyayı",
-      "Kartlı Geçiş Kontrol Sistemi (CACS): Sivil havacılık güvenliğini sağlamak amacıyla, hava tarafı ve hassas tesislerin güvenliğinin sağlanmasına yönelik çeşitli kapılardan oluşan, (turnike, döner kapı, kayar kapı, mevcut kapıya kilit sistemi vb.) yolcu dışındaki kişilere yönelik kesintisiz kayıt esasına dayanan ve CCTV destekli çalışan sistem."
-    ],
-    "cevap": 3
-  },
-
-{
-    "soru": "Aşağıdaki terimlerden hangisi yanlıştır?",
-    "secenekler": [
-      "Patlayıcı İz Tespit Dedektörü (ETD): Bir çanta veya bagaj içinde yer alan veya kişilerin üzerinde ve taşıdıkları eşyalarında bulunan çok küçük miktardaki patlayıcı maddeleri veya incelemeye tabi narkotik maddeleri algılayabilme ve bunu alarm aracılığıyla bildirme özelliğine sahip teknoloji sistemi ya da farklı teknolojilerin bir arada kullanıldığı kombinasyonları",
-      "Patlayıcı Tespit Sistemi (EDS): Bagajların uçağa gitmeden önce tamamının taranmasını sağlayarak başta patlayıcı ve diğer sivil havacılık güvenliğine yönelik tehdit unsurlarını tespit edebilen farklı teknolojilerin kombinasyonundan oluşan otomasyona dayalı sistemi (X ışını, patlayıcı iz tespit dedektörü ve/veya operatör tabanlı farklı özelliklerin bir araya getirilmesi gibi)",
-      "Patlayıcı Tespit Köpeği (EDD): Bir kişi, çanta ya da bagajda yer alan çok küçük miktardaki patlayıcı maddeleri algılayabilme ve bunu bildirme özelliğine sahip köpekleri",
-      "PAT Sahası (Pist, Apron, Taksi Yolu): Bir havaalanında uçakların kalkış, iniş ve taksi için kullanılan hareket alanı ve aprondan oluşan bölümünü",
-      "Hangar: Bir havaalanında, uçakların iniş ve kalkışları için hazırlanmış ve belirlenmiş saha"
-    ],
-    "cevap": 4
-  },
-  {
+   {
     "soru": "Refakatçi eşliğinde girişler ile ilgili olarak aşağıdakilerinden hangisi doğrudur?",
     "secenekler": [
       "Refakatli girişlerin amacı; iş görüşmesi, bakım-onarım keşif vb. geçerli bir nedene dayanması.",

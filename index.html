@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Sayfanız</title>
-</head>
 
 <head>
     <meta charset="utf-8">
@@ -36,17 +32,32 @@
             width: 90%;
             max-width: 800px;
             margin: 20px auto;
-            padding: 15px;
+            padding: 20px;
             background-color: #f85f73;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            font-size: 24px;
             color: #fae8d2;
             text-align: center;
             border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+            height: auto;
+        }
+
+        #question_text {
+            font-size: clamp(16px, 4vw, 24px);
+            line-height: 1.4;
+            margin: 0;
+            padding: 10px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            width: 100%;
         }
 
         .skor {
-            font-size: 18px;
+            font-size: clamp(14px, 3vw, 18px);
             font-weight: bold;
             margin: 10px;
             display: inline-block;
@@ -54,16 +65,21 @@
 
         .answer {
             display: block;
-            padding: 12px;
-            margin: 10px auto;
-            width: 85%;
+            padding: 15px;
+            margin: 12px auto;
+            width: clamp(250px, 85%, 600px);
             background: #283b63;
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            font-size: 15px;
+            font-size: clamp(14px, 2.5vw, 16px);
             color: #fae8d2;
             transition: background 0.3s, transform 0.2s;
+            white-space: normal;
+            min-height: 44px;
+            height: auto;
+            word-wrap: break-word;
+            line-height: 1.4;
         }
 
         .answer:hover {
@@ -75,6 +91,22 @@
             background: orange;
             color: white;
             transform: scale(0.98);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            #question {
+                padding: 15px;
+                min-height: 80px;
+            }
+
+            .answer {
+                padding: 12px;
+                margin: 8px auto;
+            }
         }
     </style>
 </head>
@@ -105,7 +137,17 @@
     <script>
         // Butonlara tıklama olaylarını ekleyelim
         document.querySelectorAll('.answer').forEach((button, index) => {
-            button.addEventListener('click', () => CheckAndCreateNewQuestion(index));
+            button.addEventListener('click', () => {
+                // Tüm butonlardan selected sınıfını kaldır
+                document.querySelectorAll('.answer').forEach(btn => btn.classList.remove('selected'));
+                // Tıklanan butona selected sınıfını ekle
+                button.classList.add('selected');
+                // Kısa bir gecikme ile cevabı kontrol et
+                setTimeout(() => {
+                    CheckAndCreateNewQuestion(index);
+                    button.classList.remove('selected');
+                }, 200);
+            });
         });
     </script>
 </body>

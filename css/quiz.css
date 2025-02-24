@@ -1,25 +1,17 @@
-/* Genel Stil */
 body {
     background-color: #fae8d2;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-
 .container {
-    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto 1.5em;
+    width: 90%;
 }
-
-/* Esnek düzen için */
 .row {
     margin-top: 2.0833%;
     padding: 0 1.04165%;
@@ -27,116 +19,107 @@ html {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .horizontal-align {
     display: flex;
     justify-content: center;
 }
-
 .center > div,
 .centered-block {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/* Sorular için stil */
 #question {
     width: 50vw;
-    height: 35vh;
+    min-height: 35vh; /* height yerine min-height kullanıyoruz */
+    height: auto; /* içeriğe göre otomatik yükseklik */
     margin-top: 5vh;
     background-color: #f85f73;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    font-size: 4.5vh;
+    font-size: clamp(2vh, 4.5vh, 6vh); /* responsive font size */
     color: #fae8d2;
     text-align: center;
     word-wrap: break-word;
+    overflow-wrap: break-word;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2vh; /* içerik için padding eklendi */
+    border-radius: 8px; /* opsiyonel: yumuşak köşeler */
 }
-
-/* Cevaplar için stil */
 .answer {
     width: 50vw;
-    height: 8vh;
+    min-height: 8vh; /* height yerine min-height kullanıyoruz */
+    height: auto; /* içeriğe göre otomatik yükseklik */
     margin-top: 2vh;
     background-color: #283b63;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    font-size: 4.5vh;
+    font-size: clamp(2vh, 4.5vh, 5vh); /* responsive font size */
     color: #fae8d2;
     cursor: pointer;
     transition: all 0.1s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1vh 2vh; /* içerik için padding eklendi */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
 }
-
 .answer:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30), 0 15px 21px rgba(0, 0, 0, 0.22);
 }
-
 .answer:active {
     width: 49vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30), 0 4px 4px rgba(0, 0, 0, 0.22);
 }
-
-/* Skor alanı */
 .skor {
     display: inline-block;
     font-size: 2.5vh;
     color: #636467;
     padding: 0 5vw;
 }
-
-/* SweetAlert Modal için stil */
 .sweetAlertModal {
     font-family: 'Josefin Sans', sans-serif !important;
     color: #636467 !important;
 }
-
 .sweetAlertModal h2 {
     font-size: 5.5vh !important;
 }
-
 .sweetAlertModal p {
     font-size: 3.5vh !important;
 }
-
 .sweet-alert,
 .sa-fix,
 .sweet-alert .sa-icon.sa-success::before,
 .sweet-alert .sa-icon.sa-success::after {
     background-color: #f3f3f3 !important;
 }
-
 .bottom-exp {
     display: block;
     text-align: center;
     font-size: 14px;
 }
-
 .bottom-exp a {
     text-decoration: none;
     color: #283b63;
 }
-
 .pull-container {
     display: flex;
     justify-content: space-between;
 }
-
-/* Mobil cihazlar için responsive ayarlamalar */
 @media only screen and (max-width: 500px) {
-    #question {
+     #question {
         width: 85vw;
-        font-size: 5.5vh;
+        font-size: clamp(2.5vh, 5.5vh, 7vh);
         margin-top: 6vh;
+        min-height: 25vh; /* mobil için daha küçük minimum yükseklik */
     }
     .answer {
         width: 85vw;
-        height: 9vh;
-        font-size: 4vh;
+        min-height: 9vh;
+        font-size: clamp(2vh, 4vh, 5vh);
+        padding: 1.5vh 2vh;
     }
     .answer:active {
         width: 83vw;
@@ -149,36 +132,24 @@ html {
         margin-top: 3vh;
     }
 }
-
-/* Tablet ve küçük ekranlar için (500px-1000px) */
-@media only screen and (min-width: 500px) and (max-width: 1000px) {
-    #question {
-        width: 70vw;
-        font-size: 5vh;
-        margin-top: 6vh;
-    }
-    .answer {
-        width: 70vw;
-        height: 8vh;
-        font-size: 4.5vh;
-    }
-    .answer:active {
-        width: 68vw;
-    }
-}
-
-/* Masaüstü için stil (1000px+ ekranlar) */
 @media only screen and (min-width: 1000px) {
     #question {
         width: 30vw;
-        font-size: 6.5vh;
+        font-size: clamp(3vh, 6.5vh, 8vh);
         margin-top: 8vh;
+        min-height: 30vh;
     }
+    
     .answer {
         width: 30vw;
-        height: 8vh;
+        min-height: 8vh;
+        font-size: clamp(2.5vh, 4.5vh, 6vh);
     }
     .answer:active {
         width: 29.5vw;
     }
+#question, .answer {
+    max-height: 80vh; /* maksimum yükseklik sınırı */
+    overflow-y: auto; /* gerektiğinde dikey scroll */
+}
 }
